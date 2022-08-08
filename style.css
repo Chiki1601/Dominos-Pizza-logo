@@ -1,0 +1,139 @@
+@keyframes s1{
+  from{margin-top: -500px;}
+  to{margin-top: 50px;}
+}
+
+@-webkit-keyframes s1{
+  from{margin-top: -500px;}
+  to{margin-top: 50px;}
+}
+
+@keyframes s2{
+  from{left: -600px;}
+  to{left: -80px;}
+}
+
+@-webkit-keyframes s2{
+  from{left: -600px;}
+  to{left: -80px;}
+}
+
+@keyframes s3{
+  from{left: 800px;}
+  to{left: 40px;}
+}
+
+@-webkit-keyframes s3{
+  from{left: 800px;}
+  to{left: 40px;}
+}
+
+@keyframes d2{
+  from{left: -625px;}
+  to{left: -105px;}
+}
+
+@-webkit-keyframes d2{
+  from{left: -625px;}
+  to{left: -105px;}
+}
+
+@keyframes d3{
+  from{left: -573px;}
+  to{left: -53px;}
+}
+
+@-webkit-keyframes d3{
+  from{left: -573px;}
+  to{left: -53px;}
+}
+
+body{
+  overflow: hidden;
+}
+div{
+  margin: auto auto;
+  position: relative; 
+}
+
+#s1{
+  width: 100px;
+  height: 100px;
+  background: #DE2939;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-top: 50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: -1;
+  animation: s1 6s infinite alternate;
+  -webkit-animation: s1 6s infinite alternate;
+}
+
+#s2{
+  width: 100px;
+  height: 100px;
+  background: #DE2939;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+  left: -80px;
+  top: -20px;
+  animation: s2 6s infinite alternate;
+  -webkit-animation: s2 6s infinite alternate;
+}
+
+.dot{
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 100%;
+ }
+
+.one{
+  position: relative;
+  top: -170px;
+}
+
+.two{
+  position: relative;
+  top: -130px;
+  left: -105px;
+  animation: d2 6s infinite alternate;
+  -webkit-animation: d2 6s infinite alternate;
+}
+
+.three{
+  position: relative;
+  top: -170px;
+  left: -53px;
+  animation: d3 6s infinite alternate;
+  -webkit-animation: d3 6s infinite alternate;
+}
+
+#s3{
+  position: relative;
+  width: 100px;
+  height: 215px;
+  background: #007BAD;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border-radius: 10px;
+  top: -300px;
+  left: 40px;
+  animation: s3 6s alternate infinite;
+  -webkit-animation: s3 6s alternate infinite;
+}
+
+p{
+  position: relative;
+  top: 100px;
+  text-align: left;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  font-size: 40px;
+  font-family: sans-serif;
+  color: white;
+}
